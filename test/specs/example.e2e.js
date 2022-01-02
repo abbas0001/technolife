@@ -7,7 +7,7 @@ describe("technolife login page", () => {
     await $("#confirm-pass").setValue("testtest");
     await $('button[type="submit"]').click();
 
-    await expect($('[class="txt"]')).toBeExisting();
-    await expect($('[class="txt"]')).toHaveTextContaining("09029451328");
+    await expect($('span[class="txt"]')).toBeExisting();
+    await expect($('span[class="txt"]')).toHaveTextContaining("09029451328");
   });
 });
